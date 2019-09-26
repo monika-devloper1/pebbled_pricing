@@ -112,7 +112,6 @@ color: rgba(8, 8, 8, 0.87);
 }
 .footer .button a
 {
-  
     background-color: rgba(255,255,255,0.2) !important;
     border: 1px solid rgba(255,255,255,0.3) !important;
     border-radius: .1875rem !important;
@@ -133,6 +132,29 @@ color: rgba(8, 8, 8, 0.87);
     line-height: 1.15rem;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);
     color: black !important;
+}
+.tabs a:first-child {
+    padding-left: 1.25rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border-left: 1px solid rgba(16,15,38,0.12);
+}
+.tabs a:last-child {
+    padding-right: 1.25rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+.tabs a {
+    border: 1px solid rgba(16,15,38,0.12);
+    border-left: 0;
+    padding: .5rem 1rem;
+    min-width: 11.25rem;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+   color:black;
+    -webkit-transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-image 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-image 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
 }
 input[type=range] {
     
