@@ -25,26 +25,33 @@ p.addEventListener("input", function() {
 
 var pay =document.getElementById("payless");
 var paylessdis =document.getElementById("paylessdis");
-
+var buy =document.getElementById("buy");
+var renew =document.getElementById("renew");
 pay.addEventListener("click",function()
 {
+	LessDiscount();
 	
-	document.getElementById("isless").value=1;
-	var res2 = document.getElementById("isless").value;
-	if(res2==0){discountupdate();}else{discountupdateless();}
-	main();
+	
+},false);
+
+renew.addEventListener("click",function()
+{
+	LessDiscount();
+	
 	
 },false);
 paylessdis.addEventListener("click",function()
 {
+LessDiscount();
 	
-	document.getElementById("isless").value=1;
+},false);
+function LessDiscount()
+{
+document.getElementById("isless").value=1;
 	var res2 = document.getElementById("isless").value;
 	if(res2==0){discountupdate();}else{discountupdateless();}
 	main();
-	
-},false);
-
+}
 function main()
 {
 
