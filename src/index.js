@@ -19,7 +19,8 @@ p.addEventListener("input", function() {
 		res.innerHTML =   p.value+" devices";
 	}
 	document.getElementById("pricehide").value=p.value;
-	if(res1=0){discountupdate();}else{discountupdateless();}
+	
+	if(res1==0){discountupdate();}else{discountupdateless();}
 }, false); 
 
 var pay =document.getElementById("payless");
@@ -30,7 +31,7 @@ pay.addEventListener("click",function()
 	
 	document.getElementById("isless").value=1;
 	var res2 = document.getElementById("isless").value;
-	if(res2=0){discountupdate();}else{discountupdateless();}
+	if(res2==0){discountupdate();}else{discountupdateless();}
 	main();
 	
 },false);
@@ -39,7 +40,7 @@ paylessdis.addEventListener("click",function()
 	
 	document.getElementById("isless").value=1;
 	var res2 = document.getElementById("isless").value;
-	if(res2=0){discountupdate();}else{discountupdateless();}
+	if(res2==0){discountupdate();}else{discountupdateless();}
 	main();
 	
 },false);
@@ -58,6 +59,7 @@ function main()
 }
 function discountupdate()
 {
+
 	var p1 = document.getElementById("pricehide").value;
 	var setvalue=89;
 	if((p1>10 && p1<20) || p1==10 )
@@ -76,6 +78,7 @@ function discountupdate()
 }
 function discountupdateless()
 {
+	
 	var p1 = document.getElementById("pricehide").value;
 	var setvalue=64;
 	if((p1>10 && p1<20) || p1==10 )
