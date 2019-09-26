@@ -1,0 +1,202 @@
+body{
+   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+.wapper
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+.pricediv
+{  border-radius: 3px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  
+   align-items: flex-start;
+  grid-column-gap: 8%;
+  
+  margin:20%;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+.pricebox
+{
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
+  border-radius: .625rem !important;
+
+}
+.pricebox:hover
+{
+  transform: scale(1.05);
+  transition: all .5s;
+  z-index: 100;
+  box-shadow: 0 0 10px gray;
+
+}
+
+.pricebox:nth-child(1)  {
+  background: linear-gradient(to top, #ff416c, #ff4b2b);
+   color: white;
+} 
+.title
+{
+  font: 400 16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 3.4375rem 3.125rem 2.8125rem;
+  color: black;
+
+
+}
+.title b
+{
+  font-size: .8125rem !important;
+
+}
+.pricebox:nth-child(1) .title
+{
+  color: white;
+
+}
+.price .tag
+{
+  font-size: 4.5rem;
+   
+    letter-spacing: 0;
+    
+  padding: 2.8125rem 3.125rem 1.25rem;
+}
+.price span
+{
+ 
+ font-size: 0.9rem;
+     opacity: 1;
+    color: rgba(255,255,255,0.75);
+}
+.discount
+{
+      margin-top: -91px;
+}
+.price a
+{
+ text-decoration: none;
+ font-size: 0.9rem;
+ color: #fff;
+ border-bottom: 1px dashed white;
+}
+.footer
+{
+  padding: 2.8125rem 3.125rem;
+}
+
+.footer .detalis
+{
+  font: 400 16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+  margin-bottom: 2.5rem;
+   opacity: 1;
+    color: rgba(255,255,255,0.75);
+  
+}
+.pricebox:nth-child(2) .footer .detalis,.pricebox:nth-child(2) .price span
+{
+color: rgba(12,8,32,0.4);
+}
+.pricebox:nth-child(2) .price a
+{
+border-bottom: 1px dashed rgba(12,8,32,0.4);
+color: rgba(8, 8, 8, 0.87);
+}
+.footer .button a
+{
+  
+    background-color: rgba(255,255,255,0.2) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    border-radius: .1875rem !important;
+     backdrop-filter: blur(10px);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1.1875rem 1.875rem 1.0625rem;
+    vertical-align: middle;
+    color: white !important;
+}
+.pricebox:nth-child(2) .footer .button a
+{
+  
+    background: #fcfcfc !important;
+    border:  1px solid rgba(0,0,0,0.1) !important;
+    height: 4rem;
+    line-height: 1.15rem;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);
+    color: black !important;
+}
+input[type=range] {
+    
+   width: 293px;
+    height: 57px;
+    padding-top: 5px;
+    overflow: hidden;
+    margin: 0;
+    margin-left: -20px;
+    transform-style: preserve-3d;
+    perspective: 300;
+    transform-origin: 50% 50% 300px;
+    perspective-origin: 50% -121%;
+    text-decoration: none;
+       transform: skew(0deg);
+        border: none;
+      }
+
+input[type=range]:after {
+    content: "";
+    position: absolute;
+    background: rgb(190, 190, 190);
+    width: 12px;
+    left: 1px;
+    border-radius: 50%;
+    height: 12px;
+    top: 26px;
+    z-index: 1;
+    box-shadow: 46px 0 0 rgb(190, 190, 190), 104px 0 0 rgb(190, 190, 190), 280px 1px 0 rgb(190, 190, 190);
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px)
+{
+  .pricediv{
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+  }
+ 
+}
+@media screen and (min-device-width: 300px) 
+{
+   .footer .button a
+  {
+  padding: 7%;
+  }
+  .price .tag
+{
+  
+    
+  padding: 2.8125rem 1.125rem 1.25rem;
+  text-align: center;
+}
+.pricebox
+{
+  margin-top: 5%;
+}
+}
+@media screen and (max-device-width: 360px) 
+{
+.pricediv
+{
+margin: 0%; 
+}
+}
+
+
