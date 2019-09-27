@@ -3,6 +3,7 @@ body{
   text-align: center;
   font-size: 15px;
 }
+
 .wapper
 {
   width: 100%;
@@ -17,7 +18,7 @@ body{
   
    align-items: flex-start;
   grid-column-gap: 8%;
-  
+  padding-top: 6rem;
   margin:20%;
   margin-top:0 !important;
   margin-bottom:0 !important;
@@ -152,14 +153,17 @@ color: rgba(8, 8, 8, 0.87);
     text-decoration: none;
     font-weight: 600;
    color:black;
-    -webkit-transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-image 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-image 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
+   margin-left: -4px;
+   
+}
+.tabs a.active {
+    background: #100F26;
+    color: #FFF !important;
 }
 input[type=range] {
     
    width: 293px;
-    height: 57px;
+    height: 56px;
     padding-top: 5px;
     overflow: hidden;
     margin: 0;
@@ -193,7 +197,9 @@ input[type=range]:after {
     grid-template-columns: 1fr;
 
   }
- 
+ .tabs a {
+    min-width: 0;
+}
 }
 @media screen and (min-device-width: 300px) 
 {
@@ -218,6 +224,12 @@ input[type=range]:after {
 .pricediv
 {
 margin: 0%; 
+}
+ .tabs a {
+    min-width: 0;
+    font-size: .6875rem;
+    white-space: nowrap !important;
+    padding: .5rem .625rem !important;
 }
 }
 

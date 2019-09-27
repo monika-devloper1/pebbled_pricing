@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
 var msg="<br>This is an exclusive price for<br> existing customers.";
 var p = document.getElementById("price"),
 res = document.getElementById("result");
-var res1 = document.getElementById("isless").value;
+
 p.addEventListener("input", function() {
 	if(p.value==50)
 	{
@@ -18,6 +18,7 @@ p.addEventListener("input", function() {
 	{
 		res.innerHTML =   p.value+" devices";
 	}
+	var res1 = document.getElementById("isless").value;
 	document.getElementById("pricehide").value=p.value;
 	
 	if(res1==0){discountupdate();}else{discountupdateless();}
@@ -45,17 +46,28 @@ paylessdis.addEventListener("click",function()
 LessDiscount();
 	
 },false);
+buy.addEventListener("click",function()
+{
+	discountupdate();
+	document.getElementById("muted").innerHTML="";
+	document.getElementById("muteddis").innerHTML="";
+	pay.innerHTML='<a href="#" id="payless">Pay less</a>';
+	document.getElementById("paylessdis").innerHTML='<a href="#" id="payless">Pay less</a>';
+	document.getElementById("Personal").innerHTML="$99";
+	document.getElementById("disbtn").innerHTML="Buy Sketch";
+	document.getElementById("btn").innerHTML="Buy Sketch";
+	document.getElementById("isless").value=0;
+	
+},false);
 function LessDiscount()
 {
-document.getElementById("isless").value=1;
+	document.getElementById("isless").value=1;
 	var res2 = document.getElementById("isless").value;
 	if(res2==0){discountupdate();}else{discountupdateless();}
 	main();
 }
 function main()
 {
-
-	
 	document.getElementById("muted").innerHTML=msg;
 	document.getElementById("muteddis").innerHTML=msg;
 	pay.innerHTML="";
@@ -102,6 +114,7 @@ function discountupdateless()
 	}
 	document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
 }
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
