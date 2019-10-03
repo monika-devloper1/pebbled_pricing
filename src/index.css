@@ -1,13 +1,479 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #fff 0%, #f6f5f9 100%);
+  font-size: 15px;
+}
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 15px 10px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+ 
+  line-height: 15px;
+  border-radius: 4px;
+  padding-right: 7%;
+  font-family: 'Eina01-Bold', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: .8125rem;
+    line-height: 1.25rem;
+    display: inline-block;
 }
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+
+
+/* Float the link section to the right */
+.header-right {
+  text-transform: uppercase;
+}
+.content
+{
+  padding-top: 5.5rem ;
+      height: 144px;
+      letter-spacing: -0.02em;
+    font-weight: 600;
+    font-size: 4.25rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.contentdetlais
+{
+  padding:-90px 0;
+    font-size: 1.625rem;
+    font-weight: 100 !important;
+    line-height: 2.25rem;
+    margin: 1.5rem 0;
+    letter-spacing: -.030625rem;
+    margin: 1.5rem 0px;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.wapper
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+ 
+}
+.pricediv
+{  border-radius: 3px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  
+   align-items: flex-start;
+  grid-column-gap: 8%;
+  padding-top: 6rem;
+  margin:20%;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  z-index: -1;
+}
+.pricebox
+{
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
+  border-radius: .625rem !important;
+  z-index: 100;
+  background: white;
+}
+.pricebox:hover
+{
+  transform: scale(1.05);
+  transition: all .5s;
+  z-index: 100;
+  box-shadow: 0 0 10px gray;
+
+}
+
+.pricebox:nth-child(1)  {
+  background: linear-gradient(to top, #ff416c, #ff4b2b);
+   color: white;
+
+} 
+.title
+{
+  font: 400 16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 3.4375rem 3.125rem 2.8125rem;
+  color: black;
+
+
+}
+.title b
+{
+  font-size: .8125rem !important;
+
+}
+.pricebox:nth-child(1) .title
+{
+  color: white;
+
+}
+.price .tag
+{
+  font-size: 4.5rem;
+   
+    letter-spacing: 0;
+    
+  padding: 2.8125rem 3.125rem 1.25rem;
+}
+.price span
+{
+ 
+ font-size: 0.9rem;
+     opacity: 1;
+    color: rgba(255,255,255,0.75);
+}
+.discount
+{
+      margin-top: -91px;
+}
+.price a
+{
+ text-decoration: none;
+ font-size: 0.9rem;
+ color: #fff;
+ border-bottom: 1px dashed white;
+}
+.footer
+{
+  padding: 2.8125rem 3.125rem;
+}
+
+.footer .detalis
+{
+  font: 400 16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+  margin-bottom: 2.5rem;
+   opacity: 1;
+    color: rgba(255,255,255,0.75);
+  
+}
+.pricebox:nth-child(2) .footer .detalis,.pricebox:nth-child(2) .price span
+{
+color: rgba(12,8,32,0.4);
+}
+.pricebox:nth-child(2) .price a
+{
+border-bottom: 1px dashed rgba(12,8,32,0.4);
+color: rgba(8, 8, 8, 0.87);
+}
+.footer .button a
+{
+    background-color: rgba(255,255,255,0.2) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    border-radius: .1875rem !important;
+     backdrop-filter: blur(10px);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1.1875rem 1.875rem 1.0625rem;
+    vertical-align: middle;
+    color: white !important;
+}
+.pricebox:nth-child(2) .footer .button a
+{
+  
+    background: #fcfcfc !important;
+    border:  1px solid rgba(0,0,0,0.1) !important;
+    height: 4rem;
+    line-height: 1.15rem;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);
+    color: black !important;
+}
+.tabs a:first-child {
+    padding-left: 1.25rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border-left: 1px solid rgba(16,15,38,0.12);
+}
+.tabs a:last-child {
+    padding-right: 1.25rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+.tabs a {
+    border: 1px solid rgba(16,15,38,0.12);
+    border-left: 0;
+    padding: .5rem 1rem;
+    min-width: 11.25rem;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+   color:black;
+   margin-left: -4px;
+   
+}
+.tabs a.active {
+    background: #100F26;
+    color: #FFF !important;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 13.8px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+ 
+  background: #b3aeae !important;
+  border-radius: 1px;
+ 
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px border-radius, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #3174ad;
+}
+
+input[type=range] {
+    
+   width: 293px;
+    height: 56px;
+    padding-top: 5px;
+    overflow: hidden;
+    margin: 0;
+    margin-left: -20px;
+    transform-style: preserve-3d;
+    perspective: 300;
+    transform-origin: 50% 50% 300px;
+    perspective-origin: 50% -121%;
+    text-decoration: none;
+    transform: skew(0deg);
+
+      }
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px black, 0px 0px 1px black;
+  border: 10px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+ background: black;
+ margin-top: -12px;
+ text-align: center;
+ 
+}
+input[type=range]:after {
+    content: "";
+    position: absolute;
+    background: black;
+    width: 12px;
+    left: 1px;
+    border-radius: 50%;
+    height: 12px;
+    top: 27px;
+    z-index: 1;
+    color: white;
+    box-shadow: 46px 0 0 black, 104px 0 0 black, 280px 1px 0 black;
+}
+
+.circles{
+        position: absolute;
+    top: 85%;
+    left: 0;
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px)
+{
+  .pricediv{
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+  }
+ .tabs a {
+    min-width: 0;
+}
+}
+@media screen and (min-device-width: 300px) 
+{
+   .footer .button a
+  {
+  padding: 7%;
+  }
+  .price .tag
+{
+  
+    
+  padding: 2.8125rem 1.125rem 1.25rem;
+  text-align: center;
+}
+.pricebox
+{
+  margin-top: 5%;
+}
+}
+
+@media screen and (max-device-width: 360px) 
+{
+.pricediv
+{
+margin: 0%; 
+}
+ .tabs a {
+    min-width: 0;
+    font-size: .6875rem;
+    white-space: nowrap !important;
+    padding: .5rem .625rem !important;
+}
+}
+
+
