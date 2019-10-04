@@ -5,16 +5,19 @@ class Price extends Component
 { 
 	render()
 	{
+		
 		return (
 		 <div className="pricebox">
      <div className="title">
-       <span>{this.props.value}</span> 
+       <span>{this.props.value.name}</span> <br/>
+        {this.props.value.devies} <br/>
+        {this.props.value.rangeinput}
        <br/>
      </div>
-     <div className="price">
-        <div className="tag" id="Personal">$99</div>
+     <div className={this.props.value.className}>
+        <div className="tag" id={this.props.value.priceclass}> ${this.props.value.cost}{this.props.value.costspan}</div>
         <span>Renewing your license?</span><br/>
-        <a href="#" id="payless">Pay less</a>
+      {this.props.value.paybtn}
         <span id="muted"> </span>
       </div>
       <div className="footer">
@@ -30,5 +33,6 @@ class Price extends Component
      </div>)
 		;
 	}
+
 }
 export default Price;

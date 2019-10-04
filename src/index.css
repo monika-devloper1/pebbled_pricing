@@ -3,6 +3,8 @@ body{
   text-align: center;
   background: linear-gradient(to bottom, #fff 0%, #f6f5f9 100%);
   font-size: 15px;
+  margin: 0px !important;
+  width: 100% !important;
 }
 .header {
   overflow: hidden;
@@ -27,7 +29,7 @@ body{
     font-style: normal;
     font-size: .8125rem;
     line-height: 1.25rem;
-    display: inline-block;
+    
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -81,7 +83,7 @@ body{
 }
 .wapper
 {
-  width: 100%;
+  width: 100% !important;
   max-width: 1200px;
   margin: 60px auto;
  
@@ -104,10 +106,15 @@ body{
 {
   overflow: hidden;
   border-radius: 5px;
+  transition-delay: 0.3s;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
   border-radius: .625rem !important;
   z-index: 100;
   background: white;
+      
+    opacity: 1;
+    transform: rotateX(0deg) translateZ(0px); 
+    
 }
 .pricebox:hover
 {
@@ -158,7 +165,7 @@ body{
 }
 .discount
 {
-      margin-top: -91px;
+     margin-top: -46px;
 }
 .price a
 {
@@ -317,104 +324,68 @@ input[type=range]:after {
     box-shadow: 46px 0 0 black, 104px 0 0 black, 280px 1px 0 black;
 }
 
-.circles{
-        position: absolute;
-    top: 85%;
-    left: 0;
-    width: 90%;
-    height: 80%;
-    overflow: hidden;
+
+.pricing-explained-cards {
+    position: relative;
+    background: red;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f5f9));
+    background: linear-gradient(to bottom, #fff 0%, #f6f5f9 100%);
 }
 
-.circles li{
-    position: absolute;
+.pricing-explained-cards::after {
+    content: '';
     display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: pink;
-    animation: animate 25s linear infinite;
-    bottom: -150px;
+    padding-bottom: 3%;
+    background-image: url(https://www.sketch.com/images/pages/pricing/triangle-edge.svg);
     
+    margin-left: -5%;
+    margin-bottom: -0.625rem !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    z-index: 90;
 }
-
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
+.price-shape {
+    position: absolute;
+    will-change: opacity;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    z-index: 1;
 }
-
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
+.price-shape.shape-01 {
+    bottom: 6.25rem;
+    left: 5%;
 }
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
+.price-shape.shape-02{bottom:4.375rem;left:17%}.price-shape.shape-03{bottom:15rem;left:12%}.price-shape.shape-04{bottom:7.5rem;left:22%}.price-shape.shape-05{left:14%;bottom:-50px}.price-shape.shape-06{left:68%;bottom:100px}.price-shape.shape-07{left:47%;bottom:300px}.price-shape.shape-08{bottom:-60px;left:-100px}.price-shape.shape-09{left:85%;bottom:-60px}.price-shape.shape-10{left:67%;bottom:225px}.price-shape.shape-11{left:41%;bottom:10px}.price-shape.shape-12{left:79%;bottom:100px}.price-shape.shape-13{left:81%;bottom:140px}.price-shape.shape-14{left:75%;bottom:10px}.price-shape.shape-15{left:95%;bottom:100px}.shape-ball{will-change:transform;-webkit-transition:-webkit-transform 0.3s;transition:-webkit-transform 0.3s;transition:transform 0.3s;transition:transform 0.3s, -webkit-transform 0.3s}.pricing-explained-shapes{bottom:0px;width:100%;left:0;height:600px;position:absolute;will-change:transform;-webkit-transition:-webkit-transform 0.5s;transition:-webkit-transform 0.5s;transition:transform 0.5s;transition:transform 0.5s, -webkit-transform 0.5s}.price-shape.ball-type{opacity:0;-webkit-transform:scale(0.5);transform:scale(0.5);will-change:transform, opacity;-webkit-transition:opacity 0.5s, -webkit-transform 0.5s;transition:opacity 0.5s, -webkit-transform 0.5s;transition:transform 0.5s, opacity 0.5s;transition:transform 0.5s, opacity 0.5s, -webkit-transform 0.5s}[data-seats='1'] .type-1{opacity:1;-webkit-transform:scale(0.75);transform:scale(0.75)}[data-seats='1'] .price-shape:not(.shape-ball){opacity:0.8}[data-seats='1'] .pricing-explained-shapes{-webkit-transform:scale(0.95) translate(0, 15px);transform:scale(0.95) translate(0, 15px)}[data-seats='2'] .type-1,[data-seats='2'] .type-2{opacity:1;-webkit-transform:scale(0.75);transform:scale(0.75)}[data-seats='2'] .price-shape:not(.shape-ball){opacity:0.6}[data-seats='2'] .pricing-explained-shapes{-webkit-transform:scale(0.9) translate(0, 30px);transform:scale(0.9) translate(0, 30px)}[data-seats='3'] .type-1,[data-seats='3'] .type-2,[data-seats='3'] .type-3{opacity:1;-webkit-transform:scale(0.75);transform:scale(0.75)}[data-seats='3'] .price-shape:not(.shape-ball){opacity:0.4}[data-seats='3'] .pricing-explained-shapes{-webkit-transform:scale(0.85) translate(0, 40px);transform:scale(0.85) translate(0, 40px)}
+.pricing-explained-cards::before {
+    content: '';
+    position: absolute;
+    height: 4.375rem;
+    background-color: #fff;
+    bottom: -4.375rem;
+    width: 100%;
+    left: 0;
+    z-index: 10;
 }
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
+.pricing-explained-cards>.wrapper {
+    padding-bottom: 0 !important;
+    margin-bottom: -10.3125rem !important;
+    z-index: 100;
+    position: relative;
 }
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
+.pricing-explained-shapes {
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    height: 600px;
+    position: absolute;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
-
 
 @keyframes animate {
 
@@ -473,6 +444,12 @@ margin: 0%;
     font-size: .6875rem;
     white-space: nowrap !important;
     padding: .5rem .625rem !important;
+}
+}
+@media screen and (max-width: 767px)
+{
+ .wrapper {
+    padding: 5rem 0;
 }
 }
 
