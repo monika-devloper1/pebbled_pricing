@@ -18,7 +18,7 @@ class Price extends Component
         <div className="tag" id={this.props.value.priceclass}> ${this.props.value.cost}{this.props.value.costspan}</div>
         <span>Renewing your license?</span><br/>
       {this.props.value.paybtn}
-        <span id="muted"> </span>
+        <span id={this.props.value.hidecss}> </span>
       </div>
       <div className="footer">
       <div className="detalis">
@@ -27,7 +27,7 @@ class Price extends Component
       </div>
       <br/>
       <div className="button"> 
-        <a href="#" id="btn">Buy Sketch</a>
+        <a href="#" id={this.props.value.btnid}>Buy Sketch</a>
       </div>
      </div>
      </div>)
