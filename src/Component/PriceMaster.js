@@ -68,8 +68,10 @@ count:0.99
 		const opacity2=this.state.opacity2;
 		const opacity3=this.state.opacity3;
 		const transform=this.state.transform;
-		return  (<div className="wapper">
-     <div>
+		return  (<div>
+     <div >
+       
+      
        <h1 className="content">The right price for<br />you, whoever you are
        </h1>
        <h2 className="contentdetlais">Whether you’re a freelancer or need Sketch for a whole team <br />our pricing just makes sense. Renewing your license? We offer a<br /> discount for returning customers too.</h2>
@@ -92,28 +94,24 @@ count:0.99
 
        
    <div class="pricing-explained-shapes" style={transform}>
-      <img class="price-shape shape-01 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-01.svg" style={opacity3}/>
-      <img class="price-shape shape-02 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-      <img class="price-shape shape-04 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-04.svg" style={opacity3}/>
-      <img class="price-shape shape-05 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-05.svg" style={opacity3}/>
-
-      <img class="price-shape shape-06 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-01.svg" style={opacity3}/>
-      <img class="price-shape shape-08 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-      <img class="price-shape shape-09 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-04.svg" style={opacity3}/>
-
-      <img class="price-shape shape-11 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-
-      <img class="price-shape shape-12 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-
-      <img class="price-shape shape-03 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-      <img class="price-shape shape-07 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-      <img class="price-shape shape-10 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-      <img class="price-shape shape-14 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-      <img class="price-shape shape-15 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img class="price-shape shape-01 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-01.svg" style={opacity3}/>
+    <img class="price-shape shape-02 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
+    <img class="price-shape shape-04 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-04.svg" style={opacity3}/>
+    <img class="price-shape shape-05 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-05.svg" style={opacity3}/>
+    <img class="price-shape shape-06 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-01.svg" style={opacity3}/>
+    <img class="price-shape shape-08 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
+    <img class="price-shape shape-09 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-04.svg" style={opacity3}/>
+    <img class="price-shape shape-11 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
+    <img class="price-shape shape-12 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
+    <img class="price-shape shape-03 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>    
+    <img class="price-shape shape-07 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img class="price-shape shape-10 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img class="price-shape shape-14 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img class="price-shape shape-15 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
     <img class="price-shape shape-03 shape-ball ball-type type-2 s1" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity1}/>
     <img class="price-shape shape-03 shape-ball ball-type type-3 s2" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
     <img class="price-shape shape-03 shape-ball ball-type type-3 s3" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>  
-     <img class="price-shape shape-03 shape-ball ball-type type-1 s4" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
+    <img class="price-shape shape-03 shape-ball ball-type type-1 s4" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
     <img class="price-shape shape-03 shape-ball ball-type type-1 s5" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity}/>
     <img class="price-shape shape-03 shape-ball ball-type type-3 s6" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
     <img class="price-shape shape-03 shape-ball ball-type type-1 s7" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
@@ -177,9 +175,7 @@ count:0.99
 	}
 	handleChange(event) {
 		
-		
- 	 
-    	var p = document.getElementById("price"),
+		var p = document.getElementById("price"),
 		res = document.getElementById("result");
  		
   if(p.value==50)
@@ -252,7 +248,7 @@ count:0.99
   	this.setState({opacity: {'opacity': 1}});
   	this.setState({opacity1: {'opacity': 1}});
   	this.setState({opacity2: {'opacity': 1}});
-  		this.setState({opacity3: {'opacity': 0}});
+  		this.setState({opacity3: {'opacity': 0.2}});
     setvalue=i4
   }
   
@@ -274,6 +270,8 @@ count:0.99
   var i3;
   var i4;
   if(res2==0)
+
+
   {
     i1=89;
     i2=79;
@@ -303,8 +301,8 @@ count:0.99
   }
   
    
-    document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
-    document.getElementById("muted").innerHTML=msg;
+  document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
+  document.getElementById("muted").innerHTML=msg;
 	document.getElementById("pay").innerHTML=" ";
 	document.getElementById("paylessa").innerHTML=" ";
 	document.getElementById("Personal").innerHTML="$69";
@@ -358,8 +356,8 @@ Paybutton()
   }
   
    
-    document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
-    document.getElementById("muted").innerHTML=msg;
+  document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
+  document.getElementById("muted").innerHTML=msg;
 	document.getElementById("pay").innerHTML=" <a href='#' id='pay' onClick={this.Paylessbutton}  >Pay less";
 	document.getElementById("paylessa").innerHTML=" <a href='#' id='paylessa'  onClick={this.Paylessbutton} >Pay less	";
 	document.getElementById("Personal").innerHTML="$99";

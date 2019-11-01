@@ -26,7 +26,7 @@ class Price extends Component
         <p> <i class="fa fa-check-circle"></i> 1 year of Sketch Cloud</p>
       </div>
       <br/>
-      <div className="button"> 
+      <div className=""> 
         <a href="#" id={this.props.value.btnid}>Buy Sketch</a>
       </div>
      </div>
