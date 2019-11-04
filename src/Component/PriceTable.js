@@ -22,8 +22,8 @@ class Price extends Component
       </div>
       <div className="footer">
       <div className="detalis">
-        <p> <i class="fa fa-check-circle"></i> 1 year of updates</p>
-        <p> <i class="fa fa-check-circle"></i> 1 year of Sketch Cloud</p>
+        <p> <i className="fa fa-check-circle"></i> 1 year of updates</p>
+        <p> <i className="fa fa-check-circle"></i> 1 year of Sketch Cloud</p>
       </div>
       <br/>
       <div className=""> 

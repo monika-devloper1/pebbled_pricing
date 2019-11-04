@@ -5,6 +5,7 @@ import PriceTable from "./PriceTable";
 class Pricecomp extends Component
 {
 constructor(props) {
+  
     super(props)
    this.state={
 		pricetables:[
@@ -35,19 +36,11 @@ constructor(props) {
 		],
 		payactive:"buy active",
 		lessactive:"renew",
-		opacity: {
-    'opacity': 0
-  },
-  opacity1: {
-    'opacity': 0
-  },
-  opacity2: {
-    'opacity': 0
-  },
-   opacity3: {
-    'opacity': 1
-  },
-  transform:{
+		opacity: "opacity0",
+    opacity1: "opacity0",
+    opacity2: "opacity0",
+    opacity3: "opacity1",
+    transform:{
    transform: `scale(0.995) translate(0px, 2px)`
 },
 count:0.99
@@ -91,83 +84,83 @@ count:0.99
         
     
           </div>
-
-       
-   <div class="pricing-explained-shapes" style={transform}>
-    <img class="price-shape shape-01 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-01.svg" style={opacity3}/>
-    <img class="price-shape shape-02 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-    <img class="price-shape shape-04 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-04.svg" style={opacity3}/>
-    <img class="price-shape shape-05 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-05.svg" style={opacity3}/>
-    <img class="price-shape shape-06 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-01.svg" style={opacity3}/>
-    <img class="price-shape shape-08 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-    <img class="price-shape shape-09 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-04.svg" style={opacity3}/>
-    <img class="price-shape shape-11 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-    <img class="price-shape shape-12 shape-original" src="https://www.sketch.com/images/pages/pricing/shape-02.svg" style={opacity3}/>
-    <img class="price-shape shape-03 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>    
-    <img class="price-shape shape-07 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-    <img class="price-shape shape-10 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-    <img class="price-shape shape-14 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-    <img class="price-shape shape-15 shape-original shape-ball" src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s1" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s2" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s3" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>  
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s4" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s5" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s6" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s7" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s8" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s9" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s10" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s11" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s12" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s13" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s14" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s15" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s16" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s17" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s18" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s19" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s20" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s21" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s22" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s23" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity} />
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s24" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s25" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s26" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s27" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s28" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s29" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s30" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s31" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s32" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity2} />
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s33" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s34" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s35" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s36" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s37" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s38" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s39" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s40" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s41" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s42" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s43" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s44" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s45" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s46" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s47" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s48" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s49" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s50" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s51" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s52" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s53" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-1 s54" src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" style={opacity}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s55" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s56" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s57" src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-2 s58" src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" style={opacity1}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s59" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>
-    <img class="price-shape shape-03 shape-ball ball-type type-3 s60" src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" style={opacity2}/>    
+         
+   <div className="pricing-explained-shapes" style={transform}>
+    <img className={'price-shape shape-01 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-01.svg" />
+    <img className={'price-shape shape-02 shape-original ' + opacity3} src="https://www.sketch.com/images/pages/pricing/shape-02.svg" />
+    <img className={'price-shape shape-04 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-04.svg" />
+    <img className={'price-shape shape-05 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-05.svg" />
+    <img className={'price-shape shape-06 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-01.svg" />
+    <img className={'price-shape shape-08 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-02.svg" />
+    <img className={'price-shape shape-09 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-04.svg" />
+    <img className={'price-shape shape-11 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-02.svg" />
+    <img className={'price-shape shape-12 shape-original ' + opacity3}  src="https://www.sketch.com/images/pages/pricing/shape-02.svg" />
+    <img className={'price-shape shape-03 shape-original shape-ball'} src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>    
+    <img className={'price-shape shape-07 shape-original shape-ball'} src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img className={'price-shape shape-10 shape-original shape-ball'} src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img className={'price-shape shape-14 shape-original shape-ball'} src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img className={'price-shape shape-15 shape-original shape-ball'} src="https://www.sketch.com/images/pages/pricing/shape-03.svg"/>
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s1 ' + opacity1} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s2 ' + opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s3 ' + opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />  
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s4 ' + opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s5 ' + opacity} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s6 ' + opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s7 ' + opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s8 ' + opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s9 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s10 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s11 '    + opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s12 ' + opacity1} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s13 ' + opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s14 ' + opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s15 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s16 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s17 '+ opacity2} src="https:/www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s18 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s19 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s20 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s21 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s22 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s23 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s24 '+ opacity2}src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s25 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s26 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s27 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s28 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s29 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s30 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s31 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s32 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg"  />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s33 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s34 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s35 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s36 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s37 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s38 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s39 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s40 ' + opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s41 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s42 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s43 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s44 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s45 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s46 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s47 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s48 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s49 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s50 ' + opacity1} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s51 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s52 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s53 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-1 s54 '+ opacity} src="https://www.sketch.com/images/pages/pricing/shape-02-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s55 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s56 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s57 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-03-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-2 s58 '+ opacity1} src="https://www.sketch.com/images/pages/pricing/shape-01-sm.svg" />
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s59 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg"/>
+    <img className={'price-shape shape-03 shape-ball ball-type type-3 s60 '+ opacity2} src="https://www.sketch.com/images/pages/pricing/shape-04-sm.svg"/>    
+   
     </div>
      </div>
        );
@@ -219,41 +212,41 @@ count:0.99
   var setvalue=i1;
   if(p1<10)
   {
-	this.setState({opacity: {'opacity': 0}});
-  	this.setState({opacity1: {'opacity': 0}});
-  	this.setState({opacity2: {'opacity': 0}});
-  	this.setState({opacity3: {'opacity': 1}});
+	  this.setState({opacity:"opacity0"});
+  	this.setState({opacity1:"opacity0"});
+  	this.setState({opacity2:"opacity0"});
+  	this.setState({opacity3:"opacity1"});
   	
   }
   else if((p1>10 && p1<20) || p1==10 )
   {
-  	this.setState({opacity: {'opacity': 1}});
-  	this.setState({opacity1: {'opacity': 0}});
-  	this.setState({opacity2: {'opacity': 0}});
-  	this.setState({opacity3: {'opacity': 1}});
+  	this.setState({opacity: "opacity1"});
+  	this.setState({opacity1:"opacity0"});
+  	this.setState({opacity2:"opacity0"});
+  	this.setState({opacity3:"opacity1"});
   	
   	
     setvalue=i2
   }
   else if((p1>20 && p1<50) || p1==20)
   {
-  	this.setState({opacity: {'opacity': 1}});
-  	this.setState({opacity1: {'opacity': 1}});
-  	this.setState({opacity2: {'opacity': 0}});
-  		this.setState({opacity3: {'opacity': 0.8}});
+  	this.setState({opacity:"opacity1"});
+  	this.setState({opacity1:"opacity1"});
+  	this.setState({opacity2:"opacity0"});
+  		this.setState({opacity3:"opacityless"});
     setvalue=i3
   }
   else if(p1==50)
   {
-  	this.setState({opacity: {'opacity': 1}});
-  	this.setState({opacity1: {'opacity': 1}});
-  	this.setState({opacity2: {'opacity': 1}});
-  		this.setState({opacity3: {'opacity': 0.2}});
+  	this.setState({opacity:"opacity1"});
+  	this.setState({opacity1: "opacity1"});
+  	this.setState({opacity2: "opacity1"});
+  	this.setState({opacity3: "opacityless1"});
     setvalue=i4
   }
   
    
- document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
+ document.getElementById("discount").innerHTML='$'+setvalue+'<span className="discountdev">/device</span>';
  
 }
 
@@ -301,7 +294,7 @@ count:0.99
   }
   
    
-  document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
+  document.getElementById("discount").innerHTML='$'+setvalue+'<span className="discountdev">/device</span>';
   document.getElementById("muted").innerHTML=msg;
 	document.getElementById("pay").innerHTML=" ";
 	document.getElementById("paylessa").innerHTML=" ";
@@ -356,7 +349,7 @@ Paybutton()
   }
   
    
-  document.getElementById("discount").innerHTML='$'+setvalue+'<span style="font-size: 1.875rem;color: black!important">/device</span>';
+  document.getElementById("discount").innerHTML='$'+setvalue+'<span className="discountdev">/device</span>';
   document.getElementById("muted").innerHTML=msg;
 	document.getElementById("pay").innerHTML=" <a href='#' id='pay' onClick={this.Paylessbutton}  >Pay less";
 	document.getElementById("paylessa").innerHTML=" <a href='#' id='paylessa'  onClick={this.Paylessbutton} >Pay less	";

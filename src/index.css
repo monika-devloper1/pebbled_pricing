@@ -1327,4 +1327,26 @@ left: 0px!important; top: 0px!important;
 }
 }
 
+/* opacity */
+.opacity0
+{
+    opacity:0 !important;
+}
+.opacity1
+{
+    opacity:1 !important;
+}
+.opacityless
+{
+    opacity:0.8 !important;
+}
+.opacityless1
+{
+  opacity:0.2 !important;
+}
+/* end*/
+.discountdev
+{
+    font-size: 1.875rem;color: black!important
+}
 
