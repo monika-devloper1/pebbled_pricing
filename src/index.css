@@ -1325,6 +1325,13 @@ left: 0px!important; top: 0px!important;
 {
 left: 0px!important; top: 0px!important;
 }
+.content {
+font-size: 32px !important;
+}
+.pricing-explained-shapes {
+    
+    width: 56% !important;
+    }
 }
 
 /* opacity */
