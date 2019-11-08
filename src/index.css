@@ -96,7 +96,7 @@ img {
     z-index: 10;
 }
 .badge {
-  top: 35px;
+  
     display: inline-block;
     position: relative;
     line-height: 1.75rem;
@@ -107,7 +107,7 @@ img {
     padding: 0 0.75rem;
     -webkit-transform: scale(1.2) !important;
     transform: scale(1.2) !important;
-    opacity: 0 !important;
+    opacity: 1 !important;
     background-image: -webkit-gradient(linear, right top, left top, from(#e64c4c), to(#ef32fb));
     background-image: linear-gradient(270deg, #e64c4c 0%, #ef32fb 100%);
     -webkit-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1),background-color 0.6s cubic-bezier(0.19, 1, 0.22, 1),border-color 0.6s cubic-bezier(0.19, 1, 0.22, 1),opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1),-webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -311,7 +311,7 @@ text-decoration: none;
     margin-left: 3rem;
 }
 .card>* {
-    display: block;
+    
     position: relative;
     z-index: 1;
 }
@@ -398,6 +398,11 @@ section .wrapper {
     background: white;
 
     margin: 0 auto;
+}
+h3, .h3 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+    margin: 2rem 0 1rem;
 }
 .w
 {
@@ -1208,7 +1213,7 @@ h2, .h2 {
     margin: 3rem 0 1.5rem;
     letter-spacing: -0.02em;
     font-weight: 600;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word;                                               
 
 }
 .leadp {
@@ -1332,6 +1337,22 @@ font-size: 32px !important;
     
     width: 56% !important;
     }
+.Bg h1 {
+    font-size: 3em !important;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 50px;
+    
+}
+a.colorgradient-card {
+    width: 80%;
+    }
+    .block-features .wrapper {
+   
+    display: block;
+}
 }
 
 /* opacity */
@@ -1356,4 +1377,44 @@ font-size: 32px !important;
 {
     font-size: 1.875rem;color: black!important
 }
+.block-features .wrapper .feature p {
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
+}
+.block-features .wrapper .feature .view-all {
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: opacity 0.15s ease-out;
+    transition: opacity 0.15s ease-out;
+    position: absolute !important;
+    bottom: 2.5rem;
+}
+.card::before, .card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    will-change: opacity;
+    transition: opacity 0.2s ease-in;
+}
+.background-indigo
+{
+    background-color: #815eff;
+}
+.background-orange 
+ {
+background-color: #fb8332;
+}
+span.view-all.light::after, a.view-all.light::after {
+    content: ">";
+    }
+    .event-init
+    {
+        margin-top: 43px;
+    }
 

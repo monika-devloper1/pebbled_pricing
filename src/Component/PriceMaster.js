@@ -22,7 +22,7 @@ constructor(props) {
 		 {id:2,value:{
 		 	name:"Volume License",
 		 	devies: <b id='result' >2 devices</b> ,
-		    rangeinput: <input type="range" onChange={this.handleChange.bind(this)} min="2" max='50' value="2" step="1" id="price"/>,
+		    rangeinput: <input type="range" onChange={this.handleChange.bind(this)} min="2" max='50'  step="1" id="price"/>,
 		    cost:89,
 		    costspan:<span >/device</span>,
 		    className:'price discount',

@@ -42,12 +42,12 @@ class HomeBanner extends Component
             <source type="video/mp4" src="https:/cdn.sketchapp.com/assets/pages/home/variable-fonts.mp4" /> 
           </video>
         </span>
-        <span className="badge reveal">New in Sketch 59</span>
+        <span className="badge reveal show">New in Sketch 59</span>
         <h3>OpenType features and Variable fonts</h3>
         <p>
           Infinite flexibility and support for feature-rich fonts, right inside Sketch.
         </p>
-        <span className="view-all light">Learn more</span>
+        <span className="view-all light">Learn more </span>
       </a>
     </div>
      <div className="feature-wrapper">
@@ -63,7 +63,7 @@ class HomeBanner extends Component
           With Smart Layout, you can create responsive, reusable components that automatically resize to fit your
           content.
         </p>
-        <span className="view-all light">Learn more</span>
+        <span className="view-all light">Learn more </span>
       </a>
     </div>
     <div className="feature-wrapper">
@@ -79,7 +79,7 @@ class HomeBanner extends Component
           Sketch for Teams takes collaboration to the next level. Now your whole team can share designs and prototypes,
           provide feedback and collaborate in a single workspace.
         </p>
-        <span className="view-all light">Learn more</span>
+        <span className="view-all light">Learn more </span>
       </a>
     </div>
     </div>
@@ -147,28 +147,28 @@ class HomeBanner extends Component
               <p className="card-subtitle">Runner</p>
             </a></article1>
   <article1><a href="https:/www.arielverber.com/felipe/" className="colorgradient-card">
-              <p className="card-title link-heading-arrow arrow-light">Magically turn wireframes into UI elements in Sketch</p>
-              <p className="card-subtitle">Felipe</p>
+              <p className="card-title link-heading-arrow arrow-light">Automatically create specs and guidelines for handoff</p>
+              <p className="card-subtitle">Zeplin</p>
             </a></article1>
   <article1><a href="https:/www.arielverber.com/felipe/" className="colorgradient-card">
-              <p className="card-title link-heading-arrow arrow-light">Magically turn wireframes into UI elements in Sketch</p>
-              <p className="card-subtitle">Felipe</p>
+              <p className="card-title link-heading-arrow arrow-light">Create, customize, and share your own Material theme</p>
+              <p className="card-subtitle">Material</p>
             </a></article1>
   <article1><a href="https:/www.arielverber.com/felipe/" className="colorgradient-card">
-              <p className="card-title link-heading-arrow arrow-light">Magically turn wireframes into UI elements in Sketch</p>
-              <p className="card-subtitle">Felipe</p>
+              <p className="card-title link-heading-arrow arrow-light">Create beautiful timeline animations right inside Sketch</p>
+              <p className="card-subtitle">Timeline</p>
             </a></article1>
   <article1><a href="https:/www.arielverber.com/felipe/" className="colorgradient-card">
-              <p className="card-title link-heading-arrow arrow-light">Magically turn wireframes into UI elements in Sketch</p>
-              <p className="card-subtitle">Felipe</p>
+              <p className="card-title link-heading-arrow arrow-light">Transform your designs into beautiful user flow diagrams</p>
+              <p className="card-subtitle">Overflow</p>
             </a></article1>
   <article1><a href="https:/www.arielverber.com/felipe/" className="colorgradient-card">
-              <p className="card-title link-heading-arrow arrow-light">Magically turn wireframes into UI elements in Sketch</p>
-              <p className="card-subtitle">Felipe</p>
+              <p className="card-title link-heading-arrow arrow-light">Turn your screenshots into stunning perspective mockups</p>
+              <p className="card-subtitle">Angle</p>
             </a></article1>
   <article1><a href="https:/www.arielverber.com/felipe/" className="colorgradient-card">
-              <p className="card-title link-heading-arrow arrow-light">Magically turn wireframes into UI elements in Sketch</p>
-              <p className="card-subtitle">Felipe</p>
+              <p className="card-title link-heading-arrow arrow-light">Render React components to Sketch and build a design system</p>
+              <p className="card-subtitle">React Sketch</p>
             </a></article1>
  
 </sketch></div>
@@ -205,7 +205,7 @@ class HomeBanner extends Component
   </div>
 </section>
 
-         <section className="block-buy">
+  <section className="block-buy">
   <div className="wrapper w ">
 
     <div className="block-buy-wrapper background-dark grid-buy">
