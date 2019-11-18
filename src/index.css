@@ -1353,6 +1353,23 @@ a.colorgradient-card {
    
     display: block;
 }
+.block-features .wrapper .feature-wrapper+.feature-wrapper {
+     margin-left: 0rem; 
+}
+.card {
+    display: block;
+    width: 58%;
+    }
+    .block-buy .wrapper .sketch-logo {
+    position: unset;
+}
+.leadp {
+    
+    line-height: 1em !important;
+    }
+    .grid-buy {
+    display: block !important;
+}
 }
 
 /* opacity */

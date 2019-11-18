@@ -222,7 +222,7 @@ class HomeBanner extends Component
             <li><a href="/get/" className="button button-primary event-init" data-event-type="button" data-event-label="buy: free trial">Try for Free ↓</a></li>
             <li itemscope="" itemtype="http:/schema.org/Offer"><a href="/pricing/" className="button event-init" data-event-type="button" data-event-label="buy: get a license">Get a license</a></li>
           </ul>
-        </nav>
+    </nav>
    </div>
     </div>
 
